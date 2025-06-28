@@ -12,46 +12,27 @@ Die Architektur erlaubt sowohl proprietäre als auch Open-Source-Workflows und i
 ```mermaid
 flowchart TD
     Scheduler["**scheduler 🟢 🔷**<br/>erzeugt Jobs<br/>Startsignale an worker"]
-    Worker["**worker 🟢 🔷**<br/>führt Jobs aus<br/>nutzt interfaces_core"]
-    Workflow["**workflow 🟢 ◻️**<br/>führt YAML-basierte<br/>Workflows aus"]
+    Worker["**worker 🟢 🔷**<br/>führt Jobs aus<br/>lädt workflow.yaml<br/>führt Schritte aus"]
+    Workflow["**workflow 🔴 ◻️**<br/>führt YAML-basierte<br/>Workflows schrittweise aus"]
 
-    Foundation["**foundation 🟢 ◻️**<br/>rollenspezifische<br/>Konfiguration,<br/>Modelle"]
-
-    InterfacesCore["**interfaces_core 🟢 ◻️**<br/>offene Schnittstellen"]
-    InterfacesInternal["**interfaces_internal 🔴 ◻️**<br/>Proprietäre Schnittstellen"]
-    InterfacesContext["**interfaces_context 🟢 ◻️**<br/>Kontext-Interfaces"]
-
-    Context["**context 🔴 ◻️**<br/>Konkrete Kontext-Implementierung"]
-    Core["**core_proprietary 🔴 ◻️**<br/>interne Implementierungen"]
-    CoreOS["**core_open_source 🟢 ◻️**<br/>für open source protocols"]
-    CoreEXTERNAL["**external 🔴 ◻️**<br/>für externe Systeme"]
+    Foundation["**foundation 🟢 ◻️**<br/>ENV-Konfiguration,<br/>Modelle, Statusdefinitionen"]
 
     Scheduler --> Worker
-    Scheduler --> Foundation
     Worker --> Workflow
     Worker --> Foundation
-
-    Workflow --> InterfacesCore
-    Workflow --> InterfacesInternal
-    Workflow --> InterfacesContext
     Workflow --> Foundation
-    Workflow --> Context
-
-    Context --> InterfacesContext
-
-    Core -.-> InterfacesInternal
-    CoreOS -.-> InterfacesCore
-    CoreEXTERNAL -.-> InterfacesInternal
-    Workflow -.-> Core
-    Workflow -.-> CoreOS
-    Workflow -.-> CoreEXTERNAL
 
     classDef service stroke:#00796b,stroke-width:4px;
     classDef lib stroke-dasharray: 5 5;
 
     class Scheduler,Worker service;
-    class Workflow,Foundation,InterfacesCore,InterfacesInternal,InterfacesContext,Context,Core,CoreOS,CoreEXTERNAL lib;
+    class Workflow,Foundation lib;
+
 ```
+
+---
+
+workflow ist aktuell proprietär. Eine reduzierte Open-Source-Variante mit grundlegender Schrittlogik ist für die Zukunft vorgesehen, um ein einfaches Starten ohne Lizenzabhängigkeit zu ermöglichen.
 
 ---
 

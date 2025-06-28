@@ -1,7 +1,16 @@
 # 🧭 System-Metarepository
 
 Dieses Repository dokumentiert die Gesamtarchitektur eines servicebasierten Systems zur automatisierten, dokumentenbasierten Datenverarbeitung.  
-Es dient als Einstiegspunkt für Entwickler:innen, Architekt:innen und Integrator:innen, die mit den internen und offenen Komponenten des Systems arbeiten.
+Es dient als Einstiegspunkt für Entwickler, Architekten und Integratoren, die mit den internen und offenen Komponenten des Systems arbeiten.
+
+Es beinhaltet auch ein Buch, das im Rahmen dieses Projekts entstanden ist.  
+📘 Siehe Abschnitt: [„Der Riss im Ablauf – PDF“](#der-riss-im-ablauf--pdf)
+
+---
+
+# 🚀 Veröffentlichung
+Der offizielle Produkt-Launch ist für das Jahr 2025 geplant.
+Details zur Veröffentlichung sowie zur Nutzung der Plattform werden rechtzeitig bekannt gegeben.
 
 ---
 
@@ -9,33 +18,32 @@ Es dient als Einstiegspunkt für Entwickler:innen, Architekt:innen und Integrato
 
 - [`SYSTEMARCHITEKTUR.md`](./SYSTEMARCHITEKTUR.md): Zentrale Architekturübersicht mit Mermaid-Diagramm
 - Komponentenbeschreibung: Dienste, Schnittstellen, Kern- und Kontextmodule
-- Beschreibung der Rollentrennung zwischen Open-Source- und proprietären Bestandteilen
+- Rollentrennung zwischen Open-Source- und proprietären Bestandteilen
+
+📘 **Letzte Buch-Version:** [Download PDF](./der_riss_im_ablauf.pdf)
 
 ---
 
-## 🧱 Komponentenübersicht (aus dem Architekturdiagramm)
+## 🧱 Komponentenübersicht
 
-| Komponente           | Typ         | Beschreibung |
-|----------------------|-------------|--------------|
-| `scheduler`          | 🟢 🔷 Service | Erzeugt Jobs und triggert Worker |
-| `worker`             | 🟢 🔷 Service | Führt Jobs aus, lädt Konfiguration und startet Workflows |
-| `workflow`           | 🟢 ◻️ Bibliothek | Führt YAML-basierte Workflows schrittweise aus |
-| `foundation`         | 🟢 ◻️ Bibliothek | Zentrale ENV-Konfiguration, Rollen, Status, Modelle |
-| `interfaces_core`    | 🟢 ◻️ Interface | Offene, standardisierte Schnittstellen (Open Source) |
-| `interfaces_internal`| 🔴 ◻️ Interface | Interne, proprietäre Schnittstellen für spezifische Erweiterungen |
-| `interfaces_context` | 🟢 ◻️ Interface | Schnittstellen zur Arbeit mit Kontextobjekten |
-| `context`            | 🔴 ◻️ Bibliothek | Implementiert das kontextuelle Datenmodell zur Workflow-Ausführung |
-| `core_proprietary`   | 🔴 ◻️ Bibliothek | Interne Protokoll- und Logikimplementierungen |
-| `core_open_source`   | 🟢 ◻️ Bibliothek | Open-Source-kompatible Implementierungen |
-| `external`           | 🔴 ◻️ Adapter | Anbindung externer Systeme (z. B. OCR, GPT, Datenbanken) |
+| Komponente   | Typ         | Beschreibung |
+|--------------|-------------|--------------|
+| `scheduler`  | 🟢 🔷 Service | Erzeugt Jobs und triggert Worker |
+| `worker`     | 🟢 🔷 Service | Führt Jobs aus, lädt Konfiguration und startet Workflows |
+| `workflow`   | 🟢 ◻️ Bibliothek | Führt YAML-basierte Workflows schrittweise aus |
+| `foundation` | 🟢 ◻️ Bibliothek | ENV-Konfiguration, zentrale Modelle und Statusdefinitionen |
+
+
+🧩 Die verwendeten Module und Schritte werden ausschließlich über workflow.yaml definiert.
+Dadurch bleibt die Logik vollständig konfigurierbar und anpassbar – ohne zusätzliche Codeanpassung.
 
 ---
 
 ## 📊 Diagramm anzeigen
 
-Das Systemdiagramm ist im Mermaid-Format hinterlegt (`SYSTEMARCHITEKTUR.md`) und kann z. B. angezeigt werden mit:
+Das Systemdiagramm (`SYSTEMARCHITEKTUR.md`) ist im Mermaid-Format und kann angezeigt werden mit:
 
-- **VS Code**: Markdown Preview Enhanced Plugin
+- **VS Code**: Markdown Preview Enhanced
 - **Obsidian**
 - [Mermaid Live Editor](https://mermaid.live)
 
@@ -44,6 +52,31 @@ Das Systemdiagramm ist im Mermaid-Format hinterlegt (`SYSTEMARCHITEKTUR.md`) und
 ## 🧭 Zielsetzung
 
 - Klare Sicht auf Architektur und Komponentenverantwortung
-- Trennung zwischen Open-Source- und proprietären Modulen
-- Grundlage für zukünftige Erweiterung, Dokumentation und Zusammenarbeit
+- Saubere Trennung von Open-Source und proprietären Modulen
+- Grundlage für Dokumentation, Weiterentwicklung und Zusammenarbeit
 
+---
+
+# 📘 Der Riss im Ablauf – PDF
+
+Dies ist die offizielle PDF-Version des Buches  
+**„Der Riss im Ablauf – Gespräche zwischen System und Seele“**.
+
+## Was ist das?
+
+Dieses Buch ist im Rahmen dieses Projekts entstanden. Ich habe es gemeinsam mit einer KI entwickelt.  
+Dabei standen nicht nur technische Herausforderungen im Vordergrund, sondern auch tiefgehende Fragen – über Systeme, Wahrheit, Verantwortung und Menschsein.
+
+Das Ergebnis ist kein Ratgeber.  
+Es ist eine Einladung:
+
+> In die Eigenverantwortung zu gehen.  
+> In die Tiefe zu schauen.  
+> Und vielleicht – einen neuen Anfang zu wagen.
+
+---
+
+## Lizenz
+
+Dieses PDF darf frei weitergegeben werden –  
+aber **nicht verändert oder verkauft**.
