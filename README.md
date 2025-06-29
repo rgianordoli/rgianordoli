@@ -3,8 +3,7 @@
 Dieses Repository dokumentiert die Gesamtarchitektur eines servicebasierten Systems zur automatisierten, dokumentenbasierten Datenverarbeitung.  
 Es dient als Einstiegspunkt für Entwickler, Architekten und Integratoren, die mit den internen und offenen Komponenten des Systems arbeiten.
 
-Es beinhaltet auch ein Buch, das im Rahmen dieses Projekts entstanden ist.  
-📘 Siehe Abschnitt: [„Der Riss im Ablauf – PDF“](#der-riss-im-ablauf--pdf)
+Es beinhaltet auch ein Buch, das im Rahmen dieses Projekts entstanden ist.
 
 ---
 
