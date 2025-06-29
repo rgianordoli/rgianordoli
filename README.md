@@ -8,10 +8,6 @@ Es beinhaltet auch ein Buch, das im Rahmen dieses Projekts entstanden ist.
 
 ---
 
-[![Download PDF – Der Riss im Ablauf](https://img.shields.io/badge/PDF_Download-Der_Riss_im_Ablauf-blue?style=for-the-badge&logo=readthedocs)](./der_riss_im_ablauf.pdf)
-
----
-
 
 # 🚀 Veröffentlichung
 Der offizielle Produkt-Launch ist für das Jahr 2025 geplant.
@@ -25,7 +21,10 @@ Details zur Veröffentlichung sowie zur Nutzung der Plattform werden rechtzeitig
 - Komponentenbeschreibung: Dienste, Schnittstellen, Kern- und Kontextmodule
 - Rollentrennung zwischen Open-Source- und proprietären Bestandteilen
 
-📘 **Letzte Buch-Version:** [Download PDF](./der_riss_im_ablauf.pdf)
+
+[![Download PDF – Letzte Buch-Version: Der Riss im Ablauf](https://img.shields.io/badge/PDF_Download-Der_Riss_im_Ablauf-blue?style=for-the-badge&logo=readthedocs)](./der_riss_im_ablauf.pdf)
+
+👉 Hinweis: Je nach Browser wird das PDF direkt geöffnet. Um es herunterzuladen, bitte mit Rechtsklick → „Speichern unter...“.
 
 ---
 
