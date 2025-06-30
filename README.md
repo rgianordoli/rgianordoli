@@ -1,5 +1,7 @@
 # 🧭 System-Metarepository
 
+👉 [English Version](README_EN.md)
+
 Dieses Repository dokumentiert die Gesamtarchitektur eines servicebasierten Systems zur automatisierten, dokumentenbasierten Datenverarbeitung.  
 Es dient als Einstiegspunkt für Entwickler, Architekten und Integratoren, die mit den internen und offenen Komponenten des Systems arbeiten.
 
