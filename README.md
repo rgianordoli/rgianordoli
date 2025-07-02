@@ -23,7 +23,7 @@ Details zur Veröffentlichung sowie zur Nutzung der Plattform werden rechtzeitig
 - Rollentrennung zwischen Open-Source- und proprietären Bestandteilen
 
 
-[![Download PDF – Letzte Buch-Version: Der Riss im Ablauf](https://img.shields.io/badge/PDF_Download-Der_Riss_im_Ablauf-blue?style=for-the-badge&logo=readthedocs)](./der_riss_im_ablauf.pdf)
+[![Download PDF – Letzte Buch-Version: Der Riss im Ablauf](https://img.shields.io/badge/PDF_Download-Der_Riss_im_Ablauf-blue?style=for-the-badge&logo=readthedocs)](./der-riss-im-ablauf.pdf)
 
 👉 Hinweis: Je nach Browser wird das PDF direkt geöffnet.  
 Um es herunterzuladen, bitte den **🔽 Download-Button oben rechts im Fenster** verwenden.
