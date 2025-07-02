@@ -21,7 +21,7 @@ Details on the release and how to use the platform will be announced in due time
 - Component overview: services, interfaces, core and context modules  
 - Role separation between open-source and proprietary parts
 
-[![Download PDF – Last Book Version: Rift in the FloRiftw](https://img.shields.io/badge/PDF_Download-rift-in-the-flow-blue?style=for-the-badge&logo=readthedocs)](./rift-in-the-flow.pdf)
+[![Download PDF – Last Book Version: Rift in the Flow](https://img.shields.io/badge/PDF_Download-Rift_In_The_Flow-blue?style=for-the-badge&logo=readthedocs)](./rift-in-the-flow.pdf)
 
 👉 Note: Depending on your browser, the PDF may open directly.  
 To download it, please use the 🔽 download button in the top-right corner of the viewer window.
